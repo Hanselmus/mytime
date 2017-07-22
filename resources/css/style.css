@@ -1,0 +1,38 @@
+html {
+}
+
+header {
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.logo {
+  color: MediumAquamarine;
+}
+
+nav {
+  display: inline-block;
+}
+
+.content,
+.column,
+header {
+  display: flex;
+}
+
+div {
+  border: 1 solid black;
+}
+
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
