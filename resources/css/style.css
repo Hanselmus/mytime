@@ -9,20 +9,27 @@ header {
 
 .logo {
   color: MediumAquamarine;
+  display: inline;
 }
 
 nav {
   display: inline-block;
 }
 
-.content,
-.column,
-header {
+.flex,
+.column {
   display: flex;
 }
 
-div {
-  border: 1 solid black;
+.column {
+  flex-direction: column;
+}
+
+.logo,
+.img,
+.article,
+.content {
+  border: 1px solid black;
 }
 
 .column.large {
