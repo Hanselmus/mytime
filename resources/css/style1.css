@@ -1,0 +1,165 @@
+body {
+  margin: 0px;
+  color: black;
+}
+
+.flex,
+.main,
+.main-story,
+.story,
+.bites,
+.left-column {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+/* Heading part */
+header {
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  padding: 10px 0px;
+  z-index: 5;
+  background-color: White;
+  position: fixed;
+  width: 100%;
+}
+
+.head {
+  color: MediumAquamarine;
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+}
+
+.logo {
+  font-size: 17px;
+  padding: 0px 10px;
+}
+
+.nav {
+  /* not really flex - to be checked! */
+  flex-basis: 600px;
+  align-items: center;
+}
+
+.nav li {
+  display: inline-block;
+  padding: 0px 5px;
+  justify-content: space-between;
+}
+
+.nav a {
+  color: black;
+}
+
+/* Content part */
+
+.main {
+  justify-content: center;
+  font-family: Georgia;
+}
+
+.content {
+  width: 1250px;
+  display: inline-flex;
+  top: 80px;
+  position: relative;
+}
+
+.column {
+  display: inline-flex;
+  margin: 30px 30px 0px 0px;
+}
+
+.left-column,
+.column.medium,
+.column.small {
+  flex-direction: column;
+}
+
+.column.large {
+  width: 630px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+
+.left-column {
+  flex-basis: 299px;
+  justify-content: space-between;
+}
+
+.article {
+  font-size: 17px;
+}
+
+.story,
+.main-story {
+  font-weight: bold;
+  color: White;
+  text-align: center;
+  align-items: center;
+}
+
+.story {
+  font-size: 30px;
+}
+
+.main-story {
+  font-size: 40px;
+}
+
+.bites {
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.bites ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Images as backgrounds */
+
+.mother {
+  background-image: url(../images/img-story-main.png);
+  width: 629px;
+}
+
+.earth {
+  background-image: url(../images/img-story-2.png);
+  width: 299px;
+}
+
+.camera {
+  background-image: url(../images/img-story-3.png);
+  width: 299px;
+}
+
+.cat {
+  background-image: url(../images/img-story-1.png);
+}
+
+.mother,
+.earth,
+.camera,
+.cat {
+  height: 300px;
+}
+
+.cookie {
+  background-image: url(../images/img-news-bite.png);
+  height: 240px;
+}
